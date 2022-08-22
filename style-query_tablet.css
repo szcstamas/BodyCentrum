@@ -1,0 +1,352 @@
+@media only screen and (min-width: 1600px) {
+
+
+
+    /* BUTTON MÉRETEZÉS */
+
+    .confirm {
+
+        width: 400px;
+    }
+
+    /* TOPTERMÉK SECTION */
+
+    .toptermek-box {
+
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .main-prev,
+    .main-next {
+
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+
+    /* BMI SECTION */
+
+    #bmi-lead {
+
+        background-position: 100% -35px;
+    }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 768px) {
+
+    #carousel1-1,
+    #carousel1-2,
+    #carousel1-3 {
+
+        display: none !important;
+    }
+
+
+    /* FOOTER */
+
+    .footer-insidebox {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 0px 40px;
+    }
+
+    .footer-onec {
+
+        text-align: left;
+    }
+
+    .footer-logo img {
+
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+    /* HAMBURGER MENÜ */
+
+    header {
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 1000;
+    }
+
+    .headercont {
+
+        justify-content: flex-start;
+        position: relative;
+        gap: 50px;
+        padding: 15px 10px;
+    }
+
+    nav {
+
+        display: none;
+    }
+
+    .nav-hamburger {
+
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .nav-hamburger-ins {
+
+        position: fixed;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(59, 59, 59, 1) 100%);
+        background-size: 130%;
+        background-position: center;
+        filter: grayscale(100%);
+        color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    }
+
+    .nav__list {
+
+        list-style: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        gap: 40px;
+    }
+
+    .nav__list a {
+
+        font-family: 'Russo One', sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav__link {
+
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .nav-toggle {
+
+        padding: .25em;
+        background: transparent;
+        border: 0;
+        position: absolute;
+        right: 15px;
+        top: -5px;
+        z-index: 1000;
+    }
+
+    .nav-open .nav-hamburger-ins {
+
+        transform: translateX(0);
+    }
+
+    .nav-open .hamburger {
+
+        background: #fff;
+        transform: rotate(.625turn);
+    }
+
+    .nav-open .hamburger::after {
+
+        background: #fff;
+        opacity: 0;
+    }
+
+    .nav-open .hamburger::before {
+
+        background: #fff;
+        transform: rotate(90deg) translateX(-8px);
+    }
+
+    .hamburger {
+
+        display: block;
+        position: relative;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+
+        background: #000;
+        width: 2em;
+        height: 3px;
+        border-radius: 1em;
+
+        transition: transform 250ms ease-in-out;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .hamburger::before {
+
+        top: 8px;
+    }
+
+    .hamburger::after {
+
+        bottom: 8px;
+    }
+
+
+    /* BUTTON MÉRETEZÉS */
+
+    .button-box {
+
+        margin-top: 40px;
+    }
+
+    .confirm {
+
+        width: 380px;
+        padding: 15px 25px;
+    }
+
+
+    /* TOPAKCIÓ CAROUSEL */
+
+    .carousel-inner {
+
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .topakcio-mobil {
+
+        display: none !important;
+    }
+
+
+
+    /* TOPTERMÉKEK CAROUSEL */
+
+    .container {
+
+        padding-left: 20px;
+        max-width: 700px;
+    }
+
+    .owl-prev {
+
+        left: -45px;
+    }
+
+    .owl-next {
+
+        right: -45px;
+    }
+
+    .owl-prev span,
+    .owl-next span {
+
+        font-size: 33px;
+    }
+
+
+    /* HÍREK CONTAINER */
+
+    #hirek-container {
+
+        padding: 50px 20px;
+    }
+
+
+
+    /* SZEMÉLYIEDZŐK */
+
+    #szemelyiedzok-container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .szemelyiedzok-design-left {
+
+        left: 15px;
+    }
+
+
+    /* KAPCSOLAT SECTION */
+
+    .box {
+
+        max-width: 1024px;
+    }
+
+    .kapcsolat-box {
+
+        gap: 50px;
+    }
+
+
+    /* BMI SECTION */
+
+    #bmi-lead {
+
+        padding: 40px 60px;
+        background-position: 45% -35px;
+    }
+
+    #kezdjuk {
+
+        width: 25%;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+
+        padding: 10px 40px;
+    }
+
+    .footer-insidebox {
+
+        padding: 0px 40px;
+        gap: 40px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+
+
+    /* TOPAKCIÓ CAROUSEL */
+
+    .topakcio-mobil {
+
+        display: none !important;
+    }
+
+}

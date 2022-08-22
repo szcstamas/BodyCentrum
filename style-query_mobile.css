@@ -1,0 +1,575 @@
+:root {
+
+    --clr-main: #6cacff;
+    --clr-mainhover: #4668ff;
+}
+
+/* MEDIA QUERY 560PX */
+
+@media only screen and (max-width: 768px) {
+
+    body {
+
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    /* BUTTON */
+
+    .button-box {
+
+        margin-top: 30px;
+    }
+
+    .confirm {
+
+        padding: 12px 30px;
+    }
+
+    /* HAMBURGER MENÜ */
+
+    header {
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        overflow-x: hidden;
+    }
+
+    .topakcio-carousel {
+        margin-top: 4rem;
+    }
+
+    .headercont {
+
+        justify-content: flex-start;
+        gap: 50px;
+        margin-left: 5px;
+        overflow-x: hidden;
+    }
+
+    nav {
+
+        display: none;
+    }
+
+    .nav-hamburger {
+
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    .nav-hamburger:focus {
+
+        outline: none;
+        border: none;
+    }
+
+    .nav-toggle:focus {
+
+        outline: none;
+        border: none;
+    }
+
+    .nav-hamburger-ins {
+
+        position: fixed;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(59, 59, 59, 1) 100%);
+        background-size: 130%;
+        background-position: center;
+        filter: grayscale(100%);
+        color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    }
+
+    .nav__list {
+
+        list-style: none;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        gap: 40px;
+    }
+
+    .nav__list a {
+
+        font-family: 'Russo One', sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav__link {
+
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .nav-toggle {
+
+        padding: .25em;
+        background: transparent;
+        border: 0;
+        position: absolute;
+        right: 15px;
+        top: -5px;
+        z-index: 1000;
+    }
+
+    .nav-open .nav-hamburger-ins {
+        transform: translateX(0);
+    }
+
+    .nav-open .hamburger {
+
+        background: #fff;
+        transform: rotate(.625turn);
+    }
+
+    .nav-open .hamburger::after {
+
+        background: #fff;
+        opacity: 0;
+    }
+
+    .nav-open .hamburger::before {
+
+        background: #fff;
+        transform: rotate(90deg) translateX(-8px);
+    }
+
+
+
+
+    .hamburger {
+
+        display: block;
+        position: relative;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+
+        background: #000;
+        width: 1.5rem;
+        height: 3px;
+        border-radius: 1em;
+
+        transition: transform 250ms ease-in-out;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+
+        content: '';
+        position: absolute;
+        right: 0;
+    }
+
+    .hamburger::before {
+
+        width: 1.5rem;
+        top: 8px;
+    }
+
+    .hamburger::after {
+
+        width: 1rem;
+        bottom: 8px;
+    }
+
+    #hamburger-kosar {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hamburger-kosar i {
+
+        font-size: 25px;
+        border: 4px solid #fff;
+        padding: 15px;
+        border-radius: 50%;
+    }
+
+
+
+    /* TOP CAROUSEL AKCIÓ MOBIL */
+
+    h2 {
+
+        margin-bottom: 40px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .carousel-inner {
+
+        height: auto;
+        margin-top: 70px;
+    }
+
+
+    #body-carousel {
+
+        background: url("img/akcio-1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .box {
+
+        max-width: 560px;
+    }
+
+    .topakcio-desktop {
+
+        display: none !important;
+    }
+
+    .topakcio-mobil {
+
+        display: block !important;
+    }
+
+
+
+
+
+
+    /* HÍREK */
+
+    .hirek-design-right {
+
+        top: 44%;
+        right: 0px;
+    }
+
+    .hir {
+
+        width: 90%;
+    }
+
+    .hir .hirtext {
+        padding: 20px;
+    }
+
+    .hirek-box {
+
+        flex-direction: column;
+        margin: 0 20px;
+        gap: 30px;
+        margin: auto;
+    }
+
+    .hir1,
+    .hir2 {
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hir-imgcont img {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .hirek-bg {
+
+        width: 100%;
+    }
+
+
+
+
+
+
+    /* TOPTERMÉKEK MOBIL */
+
+    .container {
+
+        padding-left: 15px;
+        margin-left: 0px;
+        width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+
+
+    .owl-carousel .owl-stage-outer {
+
+        padding: 0px;
+        padding-left: -3px;
+    }
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot {
+        background: 0 0;
+        color: inherit;
+        border: none;
+        padding: 0 !important;
+        font: inherit;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+
+        transition: all 0.4s ease;
+    }
+
+    .owl-prev span,
+    .owl-next span {
+
+        position: absolute;
+        font-size: 40px;
+        font-weight: bold;
+        color: #ccc;
+    }
+
+    .owl-theme .owl-nav [class*="owl-"]:hover {
+
+        background-color: transparent;
+        color: #000;
+    }
+
+    .owl-prev {
+
+        left: 0px;
+    }
+
+    .owl-next {
+
+        right: 0px;
+    }
+
+
+    #toptermek-container {
+
+        padding: 40px 0px;
+
+    }
+
+    .main-prev,
+    .main-next {
+
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .toptermek-box {
+
+        padding: 0px;
+        justify-content: flex-start;
+        margin: auto;
+        gap: 16px;
+        margin: 0 auto;
+        padding-left: 18px;
+    }
+
+    .toptermek-width {
+
+        width: auto;
+        max-width: 560px;
+    }
+
+    .toptermek:nth-child(1),
+    .toptermek:nth-child(2),
+    .toptermek:nth-child(3) {
+
+        display: none;
+    }
+
+    .termek-kepcontainer {
+
+        width: 100px;
+    }
+
+
+    /* BMI SECTION MOBIL */
+
+    #h2line {
+
+        width: 30%;
+    }
+
+    #bmi-lead {
+
+        height: auto;
+        width: 100%;
+        padding: 40px 40px;
+        background: #000;
+    }
+
+    #bmi-lead .bmi-leadbox p {
+
+        width: 100%;
+    }
+
+    #kezdjuk {
+
+        width: 45%;
+    }
+
+
+
+    /* LEGJOBB SZEMÉLYI EDZŐK MOBIL */
+
+    #szemelyiedzok {
+
+        padding: 60px 0px;
+        width: 100%;
+    }
+
+    #szemelyiedzok h2 {
+
+        margin: auto;
+        margin-bottom: 40px;
+        width: 80%;
+    }
+
+    #szemelyiedzok-container {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .szemelyiedzok-box {
+
+        margin: 0 auto;
+        height: 400px;
+        width: 192px;
+    }
+
+    .szemelyiedzok-box:nth-child(2) h4 {
+
+        bottom: 120px !important;
+    }
+
+    .szemelyiedzok-box:last-child {
+
+        margin-bottom: 0px;
+    }
+
+    .szemelyiedzok-design-left {
+
+        left: 80px;
+    }
+
+    #szemelyiedzok h4 {
+
+        margin-bottom: 8px;
+    }
+
+    .szemelyi-leiras {
+
+        width: 80%;
+    }
+
+    .image-box {
+
+        height: 400px;
+    }
+
+
+
+    /* KAPCSOLAT SECTION MOBIL */
+
+    #kapcsolat {
+
+        padding: 50px 0px;
+    }
+
+    .kapcsolat-box {
+
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+
+    .kapcsolat-box .kapcsolat-ob {
+
+        width: 50px;
+    }
+
+    .kapcsolat-link p {
+
+        display: none;
+    }
+
+
+
+    /* HÍRLEVÉL MOBIL */
+
+    #hirlevel {
+
+        padding: 50px 0px;
+        margin: 0px 40px;
+    }
+
+
+
+    /* FOOTER MOBIL */
+
+    footer {
+
+        padding: 10px 20px;
+        overflow: hidden;
+    }
+
+    .footer-container .footer-links {
+
+        gap: 20px;
+    }
+
+    .footer-insidebox {
+
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-logo img {
+
+        width: 100%;
+    }
+
+    .footer-onec {
+
+        text-align: center;
+    }
+
+    .footer-kapcsolat p {
+
+        text-align: center;
+    }
+}
