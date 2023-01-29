@@ -9,4 +9,4 @@ Preview of full page (desktop):
 ![bodycentrum preview image](https://raw.githubusercontent.com/szcstamas/bodycentrum/main/img/szcstamas.github.io_bodycentrum_%20preview.png)
 
 Preview of full page (mobile):<br />
-![bodycentrum preview image](https://github.com/szcstamas/bodycentrum/blob/main/img/szcstamas.github.io_bodycentrum_preview_mobile.png?raw=true =x250)
+![bodycentrum preview image](https://github.com/szcstamas/bodycentrum/blob/main/img/szcstamas.github.io_bodycentrum_preview_mobile.png?raw=true)
